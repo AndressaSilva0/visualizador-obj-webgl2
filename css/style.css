@@ -1,0 +1,95 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  background: #1a1a2e;
+  color: #eee;
+  min-height: 100vh;
+}
+
+header {
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid #333;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.subtitle {
+  margin: 0.25rem 0 0;
+  color: #aaa;
+  font-size: 0.875rem;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  align-items: flex-start;
+}
+
+.viewport {
+  flex: 1 1 480px;
+}
+
+#glcanvas {
+  display: block;
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  background: #0f0f1a;
+  border: 1px solid #444;
+  border-radius: 4px;
+}
+
+.status {
+  margin: 0.5rem 0 0;
+  font-size: 0.875rem;
+  color: #8cf;
+}
+
+.controls {
+  flex: 0 1 260px;
+  background: #16213e;
+  padding: 1rem 1.25rem;
+  border-radius: 8px;
+  border: 1px solid #333;
+}
+
+.controls h2 {
+  margin: 0 0 1rem;
+  font-size: 1rem;
+}
+
+.controls label {
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+}
+
+.controls input[type="range"] {
+  display: block;
+  width: 100%;
+  margin: 0.35rem 0;
+}
+
+.controls output {
+  color: #8cf;
+  font-variant-numeric: tabular-nums;
+}
+
+.hint {
+  margin: 1rem 0 0;
+  font-size: 0.75rem;
+  color: #888;
+  line-height: 1.4;
+}

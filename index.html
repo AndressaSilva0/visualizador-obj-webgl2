@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Visualizador 3D — Utah Teapot</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Visualizador de Modelos 3D (.OBJ)</h1>
+    <p class="subtitle">WebGL2 · Computação Gráfica</p>
+  </header>
+
+  <main>
+    <section class="viewport">
+      <canvas id="glcanvas" width="800" height="600"></canvas>
+      <p id="status" class="status">Inicializando WebGL2…</p>
+    </section>
+
+    <aside class="controls">
+      <h2>Controles</h2>
+
+      <label>
+        Rotação Y
+        <input type="range" id="rotationY" min="0" max="360" value="0" step="1" />
+        <output id="rotationYValue">0°</output>
+      </label>
+
+      <label>
+        Escala (zoom)
+        <input type="range" id="scale" min="0.1" max="3" value="1" step="0.05" />
+        <output id="scaleValue">1.00</output>
+      </label>
+
+      <p class="hint">
+        Use os sliders para testar as transformações quando a renderização estiver implementada.
+      </p>
+    </aside>
+  </main>
+
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>
